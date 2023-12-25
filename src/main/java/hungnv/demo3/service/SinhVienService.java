@@ -5,10 +5,11 @@ import hungnv.demo3.entity.Sinhvien;
 import java.util.List;
 
 public interface SinhVienService {
-   void createSinhvien (Sinhvien sinhvien);
+   void createSinhvien (Sinhvien Sinhvien);
 
    List<Sinhvien> getAllSinhvien();
 
    void deleteSinhvien(Long id);
-   public void evictCache();
+
+   void updateSinhvien(Sinhvien Sinhvien);
 }

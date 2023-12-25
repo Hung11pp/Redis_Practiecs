@@ -1,16 +1,19 @@
 package hungnv.demo3.entity;
 import jakarta.persistence.*;
 
+import java.io.Serializable;
+
 @Entity
-public class Sinhvien {
+@Table(name = "sinhvien")
+public class Sinhvien implements Serializable {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "Masv")
     private long MaSV;
-    @Column
+    @Column(name = "Hotensv")
     private String HotenSV;
-    @Column
+    @Column(name = "Namsinh")
     private String NamSinh;
-    @Column
+    @Column(name = "Quequan")
     private String Quequan;
 
     public long getMaSV() {
